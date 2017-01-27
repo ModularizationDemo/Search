@@ -44,7 +44,7 @@ Pod::Spec.new do |s|
 
   s.requires_arc = true
 
-  s.dependency "Detail-Category", "1"
+  s.dependency "Detail-Category"
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # s.dependency "HLNetworking"
