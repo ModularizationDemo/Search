@@ -12,7 +12,7 @@
 #import <MJExtension/MJExtension.h>
 #import <Tools/UIView+Frame.h>
 #import <Tools/SXEasyMacro.h>
-#import <Detail-Category/Lothar+Detail.h>
+#import "Lothar+Detail.h"
 
 @interface SXSearchPage ()<UITableViewDataSource,UITableViewDelegate,UISearchBarDelegate>
 

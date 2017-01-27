@@ -47,10 +47,8 @@ Pod::Spec.new do |s|
   s.dependency 'ReactiveCocoa','2.5'
   s.dependency 'HLNetworking', '~> 2.0.0'
   s.dependency 'MJExtension', '~> 2.0'
-  s.dependency 'SDWebImage','~> 3.7'
   s.dependency 'Tools'
   s.dependency 'Detail-Category'
-  s.dependency 'Lothar'
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # s.dependency "HLNetworking"
   # s.dependency "HLNetworking+Lovek12"

@@ -10,10 +10,9 @@ target 'Search' do
   pod 'ReactiveCocoa','2.5'
   pod 'HLNetworking', '~> 2.0.0'
   pod 'MJExtension', '~> 2.0'
-  pod 'SDWebImage','~> 3.7'
   pod 'Tools'
   
   #module
-  pod 'Detail-Category', :path => '../Detail-Category'
+  pod 'Detail-Category'
   
 end
