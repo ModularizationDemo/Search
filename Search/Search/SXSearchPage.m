@@ -9,9 +9,9 @@
 #import "SXSearchPage.h"
 #import "SXSearchListCell.h"
 #import "SXSearchViewModel.h"
-#import <MJExtension/MJExtension.h>
 #import <Tools/UIView+Frame.h>
 #import <Tools/SXEasyMacro.h>
+#import <YYModel/YYModel.h>
 #import "Lothar+Detail.h"
 
 @interface SXSearchPage ()<UITableViewDataSource,UITableViewDelegate,UISearchBarDelegate>
@@ -107,7 +107,7 @@
     @weakify(self);
     [[self.viewModel.fetchSearchResultListArray execute:nil]subscribeNext:^(NSArray *x) {
         @strongify(self);
-        self.searchListArray = [SXSearchListEntity objectArrayWithKeyValuesArray:x];
+        self.searchListArray = [NSArray yy_modelArrayWithClass:[SXSearchListEntity class] json:x];
         [self.tableView reloadData];
         self.beginView.hidden = YES;
         self.tableView.hidden = NO;
