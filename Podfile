@@ -8,7 +8,7 @@ target 'Search' do
   # Uncomment this line if you're using Swift or would like to use dynamic frameworks
   # use_frameworks!
   pod 'ReactiveCocoa','2.5'
-  pod 'HLNetworking', '~> 2.0.0'
+  pod 'YYModel'
   pod 'MJExtension', '~> 2.0'
   pod 'Tools'
   

@@ -92,7 +92,9 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UIViewController *viewController = [[Lothar shared] Detail_aViewControllerWithDocid:[self.searchListArray[indexPath.row] docid]];
+    UIViewController *viewController = [[Lothar shared] Detail_aViewControllerWithDocid:self.searchListArray[indexPath.row].docid
+                                                                                boardid:nil
+                                                                             replyCount:nil];
     [self.navigationController pushViewController:viewController animated:YES];
 }
 
